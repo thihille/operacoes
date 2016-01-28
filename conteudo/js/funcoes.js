@@ -536,7 +536,7 @@ $(function() {
 	var acertos = 0;
 	var nErros = 1;
 	var nAcertos = 1;
-	$('#fase1 .carta').click(function(){
+	$('#fase1 .carta').on("click", function(){
 		var ele = $(this);
 		var eleClass = ele.attr('class');
 		var resp = ele.attr('data-resp');
@@ -548,11 +548,11 @@ $(function() {
 		}
 		var resp22 = eleClass.indexOf("virada");
 		//se tiver mais de 2 encera ou se a clicada ja tiver virada
-		if(qntVirada>1 || resp22 !=-1){
-				 carta_r1 = '';
-				 carta_r2 = '';
-				voltaCarta();
-		}else if(qntVirada==1){
+		if(qntVirada > 1 || resp22 != -1){
+            carta_r1 = '';
+            carta_r2 = '';
+            voltaCarta();
+		}else if(qntVirada == 1){
 			//se tiver 2 faz isso e encerra
 			carta_r2 = resp
 			if(carta_r1 == carta_r2){
@@ -573,8 +573,8 @@ $(function() {
 				carta_r2 = '';
 				$("#painel .erros").text(nErros++);
 				$(".som-erro")[0].play();
-			//da um tempo, limpa a carta errada que clicou e volta
-			timeoutID = window.setTimeout("voltaCarta();", 800);
+                //da um tempo, limpa a carta errada que clicou e volta
+                timeoutID = window.setTimeout("voltaCarta();", 800);
 			}	
 		}
 	})

@@ -768,40 +768,40 @@ table tr td {
 	background:url(../img/carta12over.png) no-repeat 0 0;
  }
  #fase2 .carta.tema1.virada{
-	background:url(../img/2carta1.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat 0 -3px;
  }
  #fase2 .carta.tema2.virada{
-	background:url(../img/2carta2.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -256px -3px;
  }
  #fase2 .carta.tema3.virada{
-	background:url(../img/2carta3.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -506px 0;
  }
  #fase2 .carta.tema4.virada{
-	background:url(../img/2carta4.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -763px 0;
  }
  #fase2 .carta.tema5.virada{
-	background:url(../img/2carta5.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1014px -3px;
  }
  #fase2 .carta.tema6.virada{
-	background:url(../img/2carta6.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1260px -3px;
  }
  #fase2 .carta.tema7.virada{
-	background:url(../img/2carta7.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat 0 -189px;
  }
  #fase2 .carta.tema8.virada{
-	background:url(../img/2carta8.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -249px -189px;
  }
  #fase2 .carta.tema9.virada{
-	background:url(../img/2carta9.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -502px -193px;
  }
  #fase2 .carta.tema10.virada{
-	background:url(../img/2carta10.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -757px -193px;
  }
  #fase2 .carta.tema11.virada{
-	background:url(../img/2carta11.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1012px -193px;
  }
  #fase2 .carta.tema12.virada{
-	background:url(../img/2carta12.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1260px -193px;
  }
  #fase2 .carta.tema1.fixa{
 	background:url(../img/2carta1over.png) no-repeat 0 0;
