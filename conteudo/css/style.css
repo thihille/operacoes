@@ -490,6 +490,7 @@ ul#navOptions li:hover {
 	padding:15px 15px 0 15px;
 	margin:190px auto 0 auto;
 	background-color:#fff;
+    border: 5px solid #B5407B;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -503,6 +504,7 @@ ul#navOptions li:hover {
 	-ms-transition:all .8s ease;
 	-o-transition:all .8s ease;
 	-webkit-transition:all .8s ease;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
 }
 .overlay-small .feedsmall .info {
 	position:relative;	
@@ -529,12 +531,13 @@ ul#navOptions li:hover {
 .btnFechaSmall {
 	display:block;
 	position:absolute;
-	top:0;
+    background-color: #6FBDDC;
+	top:5px;
 	left:50%;
 	margin:150px 0 0 -75px;
 	width:150px;
-	height:50px;
-	padding:5px 0 0 0;
+	height:45px;
+	padding:8px 0 0 0;
 	font-family: 'MyriadProLight';
 	font-size:31px;
 	text-align:center;
@@ -549,6 +552,8 @@ ul#navOptions li:hover {
 }
 .btnFechaSmall:hover {
 	box-shadow:0 0 30px rgba(0,0,0,0.2);
+    opacity: .8;
+    color: black;
 }
 .btnFechaSmallFinaliza {
 	display:none;
@@ -696,76 +701,76 @@ table tr td {
 	display:none;	
 }
  #fase1 .carta.tema1.virada{
-	background:url(../img/carta1.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat 0 0;
  }
  #fase1 .carta.tema2.virada{
-	background:url(../img/carta2.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -257px 0;
  }
  #fase1 .carta.tema3.virada{
-	background:url(../img/carta3.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -510px 0;
  }
  #fase1 .carta.tema4.virada{
-	background:url(../img/carta4.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -763px 0;
  }
  #fase1 .carta.tema5.virada{
-	background:url(../img/carta5.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1010px 0;
  }
  #fase1 .carta.tema6.virada{
-	background:url(../img/carta6.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1260px 0;
  }
  #fase1 .carta.tema7.virada{
-	background:url(../img/carta7.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat 0 -196px;
  }
  #fase1 .carta.tema8.virada{
-	background:url(../img/carta8.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -257px -196px;
  }
  #fase1 .carta.tema9.virada{
-	background:url(../img/carta9.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -510px -196px;
  }
  #fase1 .carta.tema10.virada{
-	background:url(../img/carta10.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -763px -196px;
  }
  #fase1 .carta.tema11.virada{
-	background:url(../img/carta11.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1010px -196px;
  }
  #fase1 .carta.tema12.virada{
-	background:url(../img/carta12.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1260px -196px;
  }
  #fase1 .carta.tema1.fixa{
-	background:url(../img/carta1over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat 0 -401px;
  }
  #fase1 .carta.tema2.fixa{
-	background:url(../img/carta2over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -251px -401px;
  }
  #fase1 .carta.tema3.fixa{
-	background:url(../img/carta3over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -504px -401px;
  }
  #fase1 .carta.tema4.fixa{
-	background:url(../img/carta4over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -755px -401px;
  }
  #fase1 .carta.tema5.fixa{
-	background:url(../img/carta5over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1008px -401px;
  }
  #fase1 .carta.tema6.fixa{
-	background:url(../img/carta6over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1256px -401px;
  }
  #fase1 .carta.tema7.fixa{
-	background:url(../img/carta7over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat 0 -606px;
  }
  #fase1 .carta.tema8.fixa{
-	background:url(../img/carta8over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -257px -608px;
  }
  #fase1 .carta.tema9.fixa{
-	background:url(../img/carta9over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -510px -610px;
  }
  #fase1 .carta.tema10.fixa{
-	background:url(../img/carta10over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -763px -607px;
  }
  #fase1 .carta.tema11.fixa{
-	background:url(../img/carta11over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1012px -605px;
  }
  #fase1 .carta.tema12.fixa{
-	background:url(../img/carta12over.png) no-repeat 0 0;
+	background:url(../img/cards.png) no-repeat -1260px -606px;
  }
  #fase2 .carta.tema1.virada{
 	background:url(../img/cards2.png) no-repeat 0 -3px;
