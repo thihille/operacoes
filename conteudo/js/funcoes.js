@@ -88,7 +88,6 @@ function PopUp(tipo,imagem,descricao){
 function start(){
 	PopUpSmall(25,"imgMsgFeed","PARA ENCONTRAR OS PARES NO JOGO DA MEMÓRIA, RESOLVA AS MULTIPLICAÇÕES.");
 	//Variáveis da capa
-    
     trilha.stop();
     
     var
@@ -133,13 +132,7 @@ function start(){
 			},500);
 		}
 	});
-	$('.botaoFechaSmallFinaliza').on({
-		click: function(){
-			//location.href="index.html"
-			sessionStorage.setItem('reiniciar_oed', 'sim');
-
-		}
-	});
+	
 	
 	verificar_inicio();
 	function verificar_inicio(){
@@ -163,6 +156,9 @@ function start(){
 
 // Começa a config do jogo ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(function() {
+    $("#botaoReinicia").on("click",function(){
+        window.parent.location.href = "../index.html";
+    });
 	var carta_r1 = '';
 	var carta_r2 = '';
 	var acertos = 0;
