@@ -1,24 +1,35 @@
 var verificar_inicio_cnd;
 var txtLvl = 0;
 //
-var trilha = new Howl({  urls: ['media/audio/somAmbiente.mp3','media/audio/somAmbiente.ogg'], loop:true, volume:0.6,onend: function() { tocar_trilha();}});
+var trilha = new Howl({
+    urls: ['media/audio/somAmbiente.mp3','media/audio/somAmbiente.ogg'], 
+    loop:true, 
+    volume:0.6,
+    onend: function() { 
+        tocar_trilha();
+    }
+});
 
 function tocar_trilha(){
-	trilha.stop();
-	trilha.play();
+	trilha.stop().play();
 	
 }
-	
-
-$(window).resize(function(){
-	updateScale();
-});
+var pararLoopStart = true;
+var startGame = {
+	init: function(){
+        if(pararLoopStart){
+            $(".som-texto1").get(0).play();
+            pararLoopStart = false;
+        }
+        
+    }
+}
 // Funções de Pop Up
 function PopUpSmall(posTxt,imagem,descricao){
 	var popup = $(".overlay-small");
 	var popupC = $(".overlay-small .feedsmall");
 	var posText = $(".overlay-small .feedsmall p");
-	
+	$(".som-texto1").load();
 	popup.find("p").html(descricao);
 	popup.find("img").attr("src","img/"+imagem+".png");
 	popup.fadeIn(300);
@@ -77,8 +88,11 @@ function PopUp(tipo,imagem,descricao){
 function start(){
 	PopUpSmall(25,"imgMsgFeed","PARA ENCONTRAR OS PARES NO JOGO DA MEMÓRIA, RESOLVA AS MULTIPLICAÇÕES.");
 	//Variáveis da capa
-
+    
+    trilha.stop();
+    
     var
+    iniciaAudio = true,
 	sons = $("audio"),
 	audioTrilha = $(".som-ambiente"),
 	audioAcerto = $(".som-acerto"),
@@ -93,18 +107,6 @@ function start(){
 	audioErro = $(".erro-som"),
 	animacao = $("#interaction");
 				
-    function iniciar_oed_funcoes(){
-		trilha.play();
-		setTimeout(function(){
-			capa.imagem.fadeOut(300,function(){
-				$(this).remove();
-				$(".som-ambiente")[0].play();
-				$(".som-ambiente").prop("volume", 0.5);
-				$(".som-texto1").get(0).play();
-			});
-		},800);
-	}
-	
 
 	var botaoFechaPop = $(".btnFechaPopUp");
 	var botaoFechaSmall = $(".btnFechaSmall");
@@ -120,14 +122,18 @@ function start(){
 				"-o-transform":"scale(0)",
 				"-webkit-transform":"scale(0)"
 			});
-
+            if(iniciaAudio){
+                trilha.stop().play();
+                iniciaAudio = false;
+            }
+            
 			setTimeout(function(){
 				$(".overlay-small").fadeOut(300);
 				//desliga = 'play';
 			},500);
 		}
 	});
-	('.botaoFechaSmallFinaliza$').on({
+	$('.botaoFechaSmallFinaliza').on({
 		click: function(){
 			//location.href="index.html"
 			sessionStorage.setItem('reiniciar_oed', 'sim');
@@ -148,13 +154,12 @@ function start(){
 }
 
 	function iniciar_com_tap(){
-	//alert("Tap");
-	trilha.play();
-	trilha.stop();
-	$(".som-texto1").get(0).play();
-	iniciar_oed_funcoes();
-	clearInterval(verificar_inicio_cnd);
-}
+        //alert("Tap");
+        trilha.play().stop();
+        $(".som-texto1").get(0).play();
+        iniciar_oed_funcoes();
+        clearInterval(verificar_inicio_cnd);
+    }
 
 // Começa a config do jogo ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(function() {
